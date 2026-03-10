@@ -1,0 +1,61 @@
+# Funkcja zwracajaca sume dwoch podanych liczb
+suma<-function(a,b) a+b
+suma(12,5)
+# Funkcja zwracajaca kwadrat sumy dwoch podanych liczb 
+kwadrat_sumy<-function(a,b){
+    c<-a+b
+    return(c^2)}
+kwadrat_sumy(12,5)
+
+
+# Podsumowanie wieku drzew znajdujacych sie w bazie Orange.
+suma_wieku=0
+n=length(Orange$age)
+for(i in 1:n){
+  suma_wieku=suma_wieku+Orange$age[i]
+  suma_wieku}
+suma_wieku
+
+sum(Orange$age) #to samo
+
+# Pêtla while wypisujaca kwadraty liczb od 1 do 10.
+i<-1
+while (i<=10){
+  print(i^2)
+  i<-i+1
+}
+
+
+# Pêtla repeat wypisujaca kwadraty liczb od 1 do 10.
+i<-1
+repeat{
+  print(i^2)
+  i<-i+1
+  if (i>10) break
+}
+
+
+#Analiza obwodow drzew z bazy Orange, wyswietlajac odpowiednie komentarze:
+n=dim(Orange)[1]
+srednia=mean(Orange$circumference)
+for (i in 1:n){
+  if (Orange$circumference[i]>srednia)
+  print("Obwód wiêkszy ni¿ œrednia")
+  else if (Orange$circumference[i]==srednia)
+    print ("Obwód równy œredniej")
+      else print("Obwód mniejszy ni¿ œrednia")
+}
+
+
+#Instrukcje warunkowe na wektorach
+ifelse(Orange$circumference>srednia, "Obwód wiêkszy ni¿ œrednia",
+  ifelse(Orange$circumference==srednia,"Obwód równy œredniej", "Obwód mniejszy ni¿ œrednia"))
+
+
+# Funkcja - przyk³ad
+x <- cbind(c(-2:5),c(-1:1,3:7))
+apply(x,1,sum)
+apply(x,2,sum)
+moja_funkcja <- function(x) x^2-1
+apply(x,1,moja_funkcja)
+apply(x,2,moja_funkcja)
