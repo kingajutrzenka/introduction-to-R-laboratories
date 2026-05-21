@@ -1,19 +1,5 @@
 # Nauka wektorów
-# 1. Najpierw ustawiamy kolor tła dla całego obszaru roboczego
 par(bg = "gray95")
-
-
-# 2. Losujemy 1000 liczb z rozkładu normalnego (tak jak głosi tytuł na obrazku)
-dane <- rnorm(1000)
-
-# 3. Rysujemy histogram
-hist(dane, 
-     col = "lavender",  # bardzo podobny, jasnofioletowy kolor słupków
-     main = "1000 Normal Random Variates",
-     xlab = "x",
-     ylab = "Frequency",
-     font.main = 3)     # font.main = 3 robi kursywę w tytule, tak jak na zdjęciu
-# klasyczny wektor liczb od 10 do 15
 
 wektor <- c(10:15)
 wektor
